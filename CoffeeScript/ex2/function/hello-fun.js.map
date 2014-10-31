@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "hello-fun.js",
+  "sourceRoot": "",
+  "sources": [
+    "hello-fun.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,CAAA,SAAA,GAAA;WAAG,oBAAH;EAAA,CAAA,CAAA,CAAA;;AAAA,EAEA,OAAO,CAAC,GAAR,CAAe,CAAA,SAAA,GAAA;WAAG,oBAAH;EAAA,CAAA,CAAH,CAAA,CAAZ,CAFA,CAAA;AAAA"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "3-12.js",
+  "sourceRoot": "",
+  "sources": [
+    "3-12.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,SAAA;;AAAA,EAAA,GAAA,GAAM,SAAA,GAAA;WAEJ,OAAO,CAAC,GAAR,CAAY,IAAC,CAAA,IAAb,EAFI;EAAA,CAAN,CAAA;;AAAA,EAKA,IAAA,GACE;AAAA,IAAA,IAAA,EAAK,SAAL;AAAA,IACA,CAAA,EAAE,GADF;GANF,CAAA;AAAA"
+}

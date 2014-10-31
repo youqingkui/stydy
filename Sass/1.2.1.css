@@ -1,0 +1,14 @@
+h1#brand {
+  color: #1875e7; }
+
+#sidebar {
+  background-color: #1875e7; }
+
+ul.nav {
+  float: left; }
+  ul.nav li {
+    float: right; }
+    ul.nav li a {
+      color: #1875e7; }
+    ul.nav li.current {
+      font-weight: bold; }

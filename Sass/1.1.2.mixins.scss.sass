@@ -1,0 +1,13 @@
+@mixin horizontal-list
+  li
+    float: left
+    margin-left: 10px
+
+
+#head ul.nav
+  @include horizontal-list
+  float: right
+
+#footer ul.nav
+  @include horizontal-list
+  margin-top: 10px

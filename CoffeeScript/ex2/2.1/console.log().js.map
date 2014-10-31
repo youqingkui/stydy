@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "console.log().js",
+  "sourceRoot": "",
+  "sources": [
+    "console.log().coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,OAAO,CAAC,GAAR,CAAY,IAAI,CAAC,KAAL,CAAW,GAAX,EAAgB,IAAI,CAAC,KAAL,CAAW,GAAX,CAAhB,CAAZ,CAAA,CAAA;;AAAA,EAGA,OAAO,CAAC,GAAR,CAAY,IAAI,CAAC,KAAL,CAAW,GAAX,EAAgB,IAAI,CAAC,KAAL,CAAW,GAAX,CAAhB,CAAZ,CAHA,CAAA;AAAA"
+}

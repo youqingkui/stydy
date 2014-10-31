@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "var2.js",
+  "sourceRoot": "",
+  "sources": [
+    "var2.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,WAAA;;AAAA,EAAA,MAAA,GAAS,SAAA,GAAA;AAAG,QAAA,GAAA;WAAA,GAAA,GAAM,EAAT;EAAA,CAAT,CAAA;;AAAA,EACA,GAAA,GAAM,EADN,CAAA;;AAAA,EAEA,MAAA,CAAA,CAFA,CAAA;;AAAA,EAGA,OAAO,CAAC,GAAR,CAAa,YAAA,GAAY,GAAzB,CAHA,CAAA;AAAA"
+}

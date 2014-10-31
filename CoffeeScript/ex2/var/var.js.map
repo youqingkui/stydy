@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "var.js",
+  "sourceRoot": "",
+  "sources": [
+    "var.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,WAAA;;AAAA,EAAA,GAAA,GAAM,EAAN,CAAA;;AAAA,EACA,MAAA,GAAS,SAAA,GAAA;WAAG,GAAA,GAAM,EAAT;EAAA,CADT,CAAA;;AAAA,EAEA,MAAA,CAAA,CAFA,CAAA;;AAAA,EAGA,OAAO,CAAC,GAAR,CAAa,YAAA,GAAY,GAAzB,CAHA,CAAA;AAAA"
+}

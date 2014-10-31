@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "arg1.js",
+  "sourceRoot": "",
+  "sources": [
+    "arg1.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,CAAA;;AAAA,EAAA,CAAA,GAAI,SAAC,CAAD,GAAA;;MAAC,IAAI;KAAY;WAAA,OAAO,CAAC,GAAR,CAAY,CAAZ,EAAjB;EAAA,CAAJ,CAAA;AAAA"
+}

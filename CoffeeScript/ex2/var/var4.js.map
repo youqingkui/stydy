@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "var4.js",
+  "sourceRoot": "",
+  "sources": [
+    "var4.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,OAAA;;AAAA,EAAA,CAAA,GAAI,CAAJ,CAAA;;AAAA,EACA,IAAA,GAAO,SAAC,CAAD,GAAA;WACL,CAAA,GAAI,EADC;EAAA,CADP,CAAA;;AAAA,EAIA,OAAO,CAAC,GAAR,CAAY,IAAA,CAAK,CAAL,CAAZ,CAJA,CAAA;;AAAA,EAKA,OAAO,CAAC,GAAR,CAAY,CAAZ,CALA,CAAA;AAAA"
+}

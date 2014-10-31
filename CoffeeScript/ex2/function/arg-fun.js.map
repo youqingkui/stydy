@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "arg-fun.js",
+  "sourceRoot": "",
+  "sources": [
+    "arg-fun.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,QAAA;;AAAA,EAAA,QAAA,GAAW,SAAC,OAAD,GAAA;WAAc,SAAA,GAAS,QAAvB;EAAA,CAAX,CAAA;;AAAA,EAEA,OAAO,CAAC,GAAR,CAAY,QAAA,CAAS,MAAT,CAAZ,CAFA,CAAA;AAAA"
+}

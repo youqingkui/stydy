@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "greeting.js",
+  "sourceRoot": "",
+  "sources": [
+    "greeting.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,QAAA;;AAAA,EAAA,QAAA,GAAW,SAAC,OAAD,GAAA;WACR,QAAA,GAAQ,SAAU,CAAA,CAAA,EADV;EAAA,CAAX,CAAA;AAAA"
+}
