@@ -1,0 +1,10 @@
+#content article h1 {
+  float: left; }
+#content article p {
+  color: orange; }
+#content aside {
+  float: right; }
+  #content aside:hover {
+    color: blue; }
+  body.ie #content aside {
+    color: green; }

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "arr.js",
+  "sourceRoot": "",
+  "sources": [
+    "arr.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,iBAAA;;AAAA,EAAA,CAAA,GAAI,+BAAJ,CAAA;;AACA,OAAA,gDAAA;aAAA;AACE,IAAA,OAAO,CAAC,GAAR,CAAY,CAAZ,CAAA,CAAA;AAAA,IACA,OAAO,CAAC,GAAR,CAAY,CAAZ,CADA,CADF;AAAA,GADA;AAAA"
+}
