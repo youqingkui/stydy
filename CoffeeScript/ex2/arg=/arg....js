@@ -6,12 +6,12 @@
   refine = function() {
     var c, chaff, wheat, _i;
     wheat = arguments[0], chaff = 3 <= arguments.length ? __slice.call(arguments, 1, _i = arguments.length - 1) : (_i = 1, []), c = arguments[_i++];
+    console.log(chaff);
     console.log("The best: " + wheat);
-    console.log("The rest: " + (chaff.join(', ')));
     return console.log("the rest: " + chaff);
   };
 
-  refine("123", "hello");
+  refine("one", "2", "3", "5");
 
 }).call(this);
 
