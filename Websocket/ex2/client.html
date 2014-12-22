@@ -12,11 +12,38 @@
         var ws = new WebSocket("ws://localhost:8181");
         ws.onopen = function (e) {
             console.log('Connection to server opened');
-        }
+        };
 
         function sendMessage() {
             ws.send($('#message').val());
         }
+
+        // UI update function
+        var changeStockEntry = function(symbol, originalValue, newValue) {
+            var valElem = $('#' + symbol + ' span');
+            valElem.html(newValue.toFixed(2));
+            if(newValue < originalValue) {
+                valElem.addClass('label-danger');
+                valElem.removeClass('label-success');
+            } else if(newValue > originalValue) {
+                valElem.addClass('label-success');
+                valElem.removeClass('label-danger');
+            }
+        };
+
+        // WebSocket message handler
+        ws.onmessage = function(e) {
+            var stocksData = JSON.parse(e.data);
+            for(var symbol in stocksData) {
+                if(stocksData.hasOwnProperty(symbol)) {
+                    changeStockEntry(symbol, stocksData[symbol], stocks[symbol]);
+                    stocks[symbol] = stocksData[symbol];
+                }
+            }
+        };
+
+
+
     </script>
 </head>
 <body lang="en">

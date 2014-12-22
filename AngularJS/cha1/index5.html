@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>Model in Scope</title>
+</head>
+<body ng-controller="PeopleController">
+{{person.name}} lives in {{person.city}}
+<script src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript">
+    $scope.person = {
+        name: "John Doe",
+        city: "New York"
+    }
+
+</script>
+</body>
+</html>
