@@ -6,6 +6,7 @@ from flask import Flask, request, make_response, \
 from wtforms import StringField, SubmitField
 from wtforms.validators import Required
 import os
+from threading import Thread
 
 
 from flask.ext.script import Manager
@@ -14,6 +15,8 @@ from flask.ext.wtf import Form
 from flask.ext.sqlalchemy import SQLAlchemy
 from flask.ext.script import Shell
 from flask.ext.migrate import Migrate, MigrateCommand
+from flask.ext.mail import Mail
+from flask.ext.mail import Message
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 
@@ -22,10 +25,36 @@ app.config['SECRET_KEY'] = 'hard to guess string'
 app.config['SQLALCHEMY_DATABASE_URI'] =\
     'mysql://root:@localhost/flask'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+
+# 邮件配置
+app.config['FLASKY_MAIL_SUBJECT_PREFIX'] = '[Flasky]'
+app.config['FLASKY_MAIL_SENDER'] = 'Flasky Admin <yuankui@mykar.com>'
+app.config['MAIL_SERVER'] = 'smtp.exmail.qq.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+
 manager = Manager(app)
 bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
+mail = Mail(app)
+
+
+def send_email(to, subject, template, **kwargs):
+    msg = Message(app.config['FLASKY_MAIL_SUBJECT_PREFIX'] + subject,
+                  sender=app.config['FLASKY_MAIL_SENDER'], recipients=["youqingkui@qq.com", "345742108@qq.com", "youqingkui@foxmail.com"])
+    msg.body = render_template(template + '.txt', **kwargs)
+    msg.html = render_template(template + '.html', **kwargs)
+    print(msg)
+    thr = Thread(target=send_async_email, args=[app, msg])
+    thr.start()
+    return thr
+
+def send_async_email(app, msg):
+    with app.app_context():
+        mail.send(msg)
 
 
 def make_shell_context():
@@ -67,9 +96,12 @@ def index():
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.name.data).first()
         if user is None:
-            user = User(username = form.name.data)
+            user = User(username=form.name.data)
             db.session.add(user)
             session['known'] = False
+            if app.config['FLASKY_MAIL_SENDER']:
+                send_email(app.config['FLASKY_MAIL_SENDER'], 'New User',
+                           'mail/new_user', user=user)
         else:
             session['known'] = True
         session['name'] = form.name.data
