@@ -8,3 +8,7 @@ raven1.quoth() # I'm hungry
 
 raven2 = new Raven()
 raven2.quoth = -> console.log "new some"
+
+
+console.log raven1.hasOwnProperty('quoth') # false
+console.log raven2.hasOwnProperty('quoth') # true

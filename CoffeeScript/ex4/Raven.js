@@ -24,6 +24,10 @@
     return console.log("new some");
   };
 
+  console.log(raven1.hasOwnProperty('quoth'));
+
+  console.log(raven2.hasOwnProperty('quoth'));
+
 }).call(this);
 
 //# sourceMappingURL=Raven.js.map

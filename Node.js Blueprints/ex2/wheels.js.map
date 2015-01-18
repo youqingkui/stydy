@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "wheels.js",
+  "sourceRoot": "",
+  "sources": [
+    "wheels.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,WAAA;;AAAA,EAAA,WAAA,GAAc,EAAd,CAAA;;AAAA,EACA,OAAO,CAAC,IAAR,GAAe,SAAC,IAAD,GAAA;WACb,WAAA,GAAc,KADD;EAAA,CADf,CAAA;;AAAA,EAIA,OAAO,CAAC,IAAR,GAAe,SAAA,GAAA;WACb,OAAO,CAAC,GAAR,CAAY,eAAA,GAAkB,WAAlB,GAAgC,SAA5C,EADa;EAAA,CAJf,CAAA;AAAA"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "nodeunit.js",
+  "sourceRoot": "",
+  "sources": [
+    "nodeunit.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,OAAO,CAAC,QAAR,GAAmB,SAAC,IAAD,GAAA;AACjB,QAAA,MAAA;AAAA,IAAA,MAAA,GAAS,IAAT,CAAA;AAAA,IACA,IAAI,CAAC,EAAL,CAAQ,MAAR,EAAgB,qBAAhB,CADA,CAAA;WAEA,IAAI,CAAC,IAAL,CAAA,EAHiB;EAAA,CAAnB,CAAA;AAAA"
+}

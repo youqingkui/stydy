@@ -1,0 +1,20 @@
+<h2>{{ book.title }}</h2> 
+<h3>{{ book.subtitle }}</h3> 
+<p> 
+  <ul> 
+    <li>ISBN: {{ book.isbn }}</li> 
+    <li>Number of Pages: {{ book.numPages }}</li> 
+    <li>Author: {{ book.author }}</li> 
+    <li>
+      Publisher: 
+      <a ng-href="{{ book.publisher.url }}" 
+        target="_blank"> 
+        {{ book.publisher.name }} 
+      </a>
+    </li> 
+  </ul> 
+</p> 
+<hr> 
+<p> 
+  {{ book.abstract }} 
+</p>

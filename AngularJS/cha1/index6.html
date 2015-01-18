@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+    <title>hello</title>
+    <script src="../bower_components/angular/angular.js"></script>
 
+</head>
+<body ng-controller="TextController">
+    <p>{{someText.message}}</p>
+    <form ng-submit="requestFunding()" ng-controller="StartUpController">
+        Starting: <input ng-model="funding.startingEstimate">
+        Recommendation: {{funding.needed}}
+        <button type="submit">Fund my startUp</button>
+        <button ng-click="reset()">reset</button>
+    </form>
+
+    <script>
+        var myAppModule = angular.module('myApp', []);
+        myAppModule.controller('TextController',
+            function($scope){
+                var someText = {};
+                someText.message = "you have started thanks";
+                $scope.someText = someText
+            }
+        );
+        myAppModule.controller('StartUpController',
+                function($scope){
+                    $scope.funding = {startingEstimate:0};
+                    comtest = function(){
+                        $scope.funding.needed = $scope.funding.startingEstimate * 10
+
+                    };
+                    $scope.$watch('funding.startingEstimate', comtest);
+
+                    $scope.requestFunding = function(){
+                        console.log("hi");
+                        alert("sorry");
+                    };
+                    $scope.reset = function(){
+                        $scope.funding.startingEstimate = 0;
+
+                    }
+                }
+        );
+    </script>
 </body>
 </html>
